@@ -21,7 +21,7 @@ export const addMovie = movie =>{
 }
 
 // action creator removeMovie qui prend l'id du film que l'on veut supprimer
-
+// action 2
 export const removeMovie = movieId =>{
     const oldMovies = JSON.parse(localStorage.getItem("movies"))
     const movies = oldMovies.filter(movie => movie.id !== movieId)
